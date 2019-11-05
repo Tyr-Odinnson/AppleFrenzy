@@ -11,15 +11,28 @@
         android:id="@+id/applefrenzylogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="266dp"
+        android:layout_below="@+id/appleTree"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
         app:srcCompat="@drawable/applefrenzylogo" />
 
     <ImageView
-        android:id="@+id/basketImage"
-        android:layout_width="142dp"
-        android:layout_height="124dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        app:srcCompat="@drawable/basket" />
+        android:id="@+id/appleTree"
+        android:layout_width="299dp"
+        android:layout_height="359dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        app:srcCompat="@drawable/appletree" />
+
 </RelativeLayout>

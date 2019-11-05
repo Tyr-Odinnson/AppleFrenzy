@@ -8,35 +8,91 @@
     android:id="@+id/activityMain"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="197dp"
-        android:layout_height="175dp"
+    <Button
+        android:id="@+id/howButton"
+        android:layout_width="145dp"
+        android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/applebuttongreen"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="How to Play"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toEndOf="@+id/authorButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/applebuttongreen" />
+
+    <Button
+        android:id="@+id/authorButton"
+        android:layout_width="145dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/applebuttongreen"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="About Author"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157"
-        app:srcCompat="@drawable/apple" />
+        app:srcCompat="@drawable/applebuttongreen" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="97dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="145dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/applebutton"
+        android:text="PLAY!"
+        android:textSize="21sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.505"
-        app:srcCompat="@drawable/rottenapple" />
+        app:layout_constraintTop_toBottomOf="@+id/authorButton"
+        app:srcCompat="@drawable/applebutton" />
+
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_width="145dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/applebuttongreen"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="High Score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/howButton"
+        app:srcCompat="@drawable/applebuttongreen" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="145dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/applebutton"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="Exit Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreButton"
+        app:srcCompat="@drawable/applebutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
