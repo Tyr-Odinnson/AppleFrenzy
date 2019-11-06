@@ -38,10 +38,11 @@
 
     <ImageView
         android:id="@+id/ground"
-        android:layout_width="582dp"
-        android:layout_height="108dp"
+        android:layout_width="427dp"
+        android:layout_height="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ground" />
 
