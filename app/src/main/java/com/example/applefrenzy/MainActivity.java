@@ -29,20 +29,20 @@ public class MainActivity extends AppCompatActivity {
         playButton = findViewById(R.id.playButton);
         exitButton = findViewById(R.id.exitButton);
 
-//        comedyBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent comedyIntent = new Intent(MainActivity.this, ComedyActivity.class);
-//                startActivity(comedyIntent);
-//            }
-//        });
-//        comedyBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent comedyIntent = new Intent(MainActivity.this, ComedyActivity.class);
-//                startActivity(comedyIntent);
-//            }
-//        });
+        authorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent comedyIntent = new Intent(MainActivity.this, AuthorActivity.class);
+                startActivity(comedyIntent);
+            }
+        });
+        howButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent comedyIntent = new Intent(MainActivity.this, HowToActivity.class);
+                startActivity(comedyIntent);
+            }
+        });
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
