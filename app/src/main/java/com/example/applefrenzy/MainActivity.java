@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button authorButton;
     private Button scoreButton;
     private Button playButton;
+    private Button storyButton;
     private Button exitButton;
 
 
@@ -27,42 +28,53 @@ public class MainActivity extends AppCompatActivity {
         authorButton = findViewById(R.id.authorButton);
         scoreButton = findViewById(R.id.scoreButton);
         playButton = findViewById(R.id.playButton);
+        storyButton = findViewById(R.id.storyButton);
         exitButton = findViewById(R.id.exitButton);
 
         authorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent comedyIntent = new Intent(MainActivity.this, AuthorActivity.class);
-                startActivity(comedyIntent);
+                Intent authorIntent = new Intent(MainActivity.this, AuthorActivity.class);
+                startActivity(authorIntent);
             }
         });
         howButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent comedyIntent = new Intent(MainActivity.this, HowToActivity.class);
-                startActivity(comedyIntent);
+                Intent howtoIntent = new Intent(MainActivity.this, HowToActivity.class);
+                startActivity(howtoIntent);
             }
         });
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent comedyIntent = new Intent(MainActivity.this, GameActivity.class);
-                startActivity(comedyIntent);
+                Intent playIntent = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(playIntent);
             }
         });
-//        comedyBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent comedyIntent = new Intent(MainActivity.this, ComedyActivity.class);
-//                startActivity(comedyIntent);
-//            }
-//        });
-//        comedyBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent comedyIntent = new Intent(MainActivity.this, ComedyActivity.class);
-//                startActivity(comedyIntent);
-//            }
-//        });
+        scoreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent scoreIntent = new Intent(MainActivity.this, ScoreActivity.class);
+                startActivity(scoreIntent);
+            }
+        });
+        storyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent storyIntent = new Intent(MainActivity.this, StoryActivity.class);
+                startActivity(storyIntent);
+            }
+        });
+        exitButton = findViewById(R.id.exitButton);
+        exitButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                moveTaskToBack(true);
+            }
+        });
+
     }
 }

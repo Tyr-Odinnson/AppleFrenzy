@@ -90,6 +90,7 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
         drawable.setExitFadeDuration(1000);
         drawable.start();
 
+
        // sound = new SoundPlayer(this);
         imgApple = findViewById(R.id.appleDrop);
         imgGround = findViewById(R.id.ground);
@@ -99,25 +100,6 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
         gestureDetector = new GestureDetector(this);
         r = new Random();
 
-//        pauseButton = findViewById(R.id.pause);
-//        relativeLayout = (RelativeLayout) findViewById(R.id.pause_menu);
-//        pauseButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-//                ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.pause_menu,null);
-//                popupWindow = new PopupWindow(container, 350, 350, true);
-//                popupWindow.showAtLocation(relativeLayout,Gravity.NO_GRAVITY,500, 500);
-//
-//                container.setOnTouchListener(new View.OnTouchListener() {
-//                    @Override
-//                    public boolean onTouch(View view, MotionEvent motionEvent) {
-//                        popupWindow.dismiss();
-//                        return true;
-//                    }
-//                });
-//            }
-//        });
 
         WindowManager wm = getWindowManager();
         Display disp = wm.getDefaultDisplay();
@@ -251,9 +233,6 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
 
     @Override
     public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-//                if(motionEvent1.getX() <= layout.getWidth() )
-//            imgBasket.animate().translationXBy(motionEvent1.getX()).setDuration(1000);
-//        Log.d("Test"," "+ motionEvent1.getX());
         return true;
     }
 
@@ -289,15 +268,6 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
     }
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
-//         Log.d("testing", "onTouch");
-//        gestureDetector.onTouchEvent(motionEvent);
-//
-//        if(motionEvent.getAction() == MotionEvent.ACTION_MOVE)
-//        {
-//
-//            imgBasket.animate().translationXBy(motionEvent.getX()).setDuration(100);
-//
-//        }
         return true;
     }
 }
