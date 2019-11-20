@@ -76,7 +76,7 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
     private Handler handler = new Handler();
     private Timer timer = new Timer();
   //  private SoundPlayer sound;
-
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
